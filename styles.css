@@ -1,0 +1,88 @@
+*,*::before,*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(90deg,rgba(76, 88, 247, 0.489),rgba(6, 41, 139, 0.483));
+    display: grid;
+    place-items:center;
+}
+.game_info{
+    position: absolute;
+    top:5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 3rem;
+    color: #fff;
+    background:linear-gradient(60deg,rgba(89, 131, 239, 0.364),rgba(57, 103, 229, 0.601));
+    border: 1px solid rgba(255,225,225,0.25);
+    border-radius: 1rem;
+    text-align: center;
+
+}
+.game_field{
+width: 90%;
+max-width: 20rem;
+background:linear-gradient(60deg,rgba(90, 166, 238, 0.338),rgba(18, 77, 238, 0.333));
+border: 1px solid rgba(255,225,225,0.25);
+border-radius: 1rem;
+padding:2rem;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+aspect-ratio: 1/1;
+}
+.box{
+  position: relative;
+  width: 100%;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;  
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1,.box2,.box4,.box5{
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+
+}
+.box3,.box6{
+    border-bottom: 2px solid white;
+
+}
+.box7,.box8{
+    border-right: 2px solid white;
+}
+.btn{
+    position: absolute;
+    bottom:3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 3rem;
+    color: #fff;
+    background-color:rgba(12, 38, 236, 0.233);
+    border: 1px solid rgba(255,225,225,0.25);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    display: none;
+}
+.btn.active{
+    display: block;
+}
+.win{
+    background-color: rgba(0,255,0,0.7);
+}
+h1{
+   position: absolute;
+   color:blue;
+   top:0px;
+   left: 50%;
+   transform: translateX(-50%);
+   font-size: 3rem;
+   text-decoration: underline;
+}
